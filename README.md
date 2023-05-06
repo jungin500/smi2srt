@@ -1,15 +1,33 @@
 # smi2srt
-Convert subtitles in ".smi" or ".ass" format to ".srt" format.
+![jungin500/axfree-smi2srt](https://img.shields.io/docker/image-size/jungin500/axfree-smi2srt?label=jungin500%2Faxfree-smi2srt)  
+  
+Convert subtitles in ".smi" or ".ass" format to ".srt" format.  
+Docker multiarch build of [axfree/smi2srt](https://github.com/axfree/smi2srt)
+
+## Docker Image
+- Docker Image: [jungin500/axfree-smi2srt](https://hub.docker.com/r/jungin500/axfree-smi2srt)
+- Supports architecture (in terms of favor NASes):
+  - `amd64` Intel/AMD 64bit
+  - `arm64` ARM 64bit
+  - `armv7l`: ARM 32bit
+
+### Quick usage
+- Converts all `.smi` files of current directory into `.srt`  
+- Preserves original `.smi` files (put `-x` on tail to remove original files)
+```
+docker run -it -v "$(pwd)":"$(pwd)" --rm jungin500/axfree-smi2srt "$(pwd)"
+```
+
 
 ## Prerequisits
-[Node.js](https://nodejs.org)
+- [Node.js](https://nodejs.org)
 
 ## Installation
 <pre>
 $ sudo npm install -g smi2srt
 </pre>
 
-## Usage
+## Command Line Usage
 <pre>
 Usage: smi2srt [options] &lt;file&gt;
 
