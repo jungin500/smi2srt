@@ -1,5 +1,5 @@
 # smi2srt
-![jungin500/axfree-smi2srt](https://img.shields.io/docker/image-size/jungin500/axfree-smi2srt?label=jungin500%2Faxfree-smi2srt)  
+[![jungin500/axfree-smi2srt](https://img.shields.io/docker/image-size/jungin500/axfree-smi2srt?label=jungin500%2Faxfree-smi2srt)](https://hub.docker.com/r/jungin500/axfree-smi2srt) [![ghcr.io/jungin500/axfree-smi2srt](https://img.shields.io/badge/jungin500%2Faxfree--smi2srt-ghcr-blue)](https://github.com/jungin500/smi2srt/pkgs/container/axfree-smi2srt) [![jungin500/smi2srt](https://github.com/jungin500/smi2srt/actions/workflows/docker-image.yml/badge.svg)](https://github.com/jungin500/smi2srt/actions)  
   
 Convert subtitles in ".smi" or ".ass" format to ".srt" format.  
 Docker multiarch build of [axfree/smi2srt](https://github.com/axfree/smi2srt)
